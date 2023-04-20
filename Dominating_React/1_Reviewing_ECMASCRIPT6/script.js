@@ -73,5 +73,3 @@ console.log(typeof StudentArthur);
 console.log(StudentArthur);
 StudentArthur.sayHello();
 */
-
-//Modules ES6
