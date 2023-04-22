@@ -1,0 +1,62 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-align: center;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: [inicio] 15rem [f-primaria i-principal] 70rem [f-principal i-secundaria] 15rem [fim];
+    grid-template-rows: [inicio] 6rem [f-topo i-menu] 4rem [f-menu i-3col] 20rem [f-3col i-rodape] 6rem [fim];
+    grid-gap: .5rem 1rem;
+}
+
+.top {
+    grid-area: inicio / inicio / f-topo / fim;
+    background-color: gray;
+    color: white;
+}
+
+.menu {
+    grid-area: i-menu / inicio / f-menu / fim;
+    background-color: brown;
+    color: white;
+};
+
+
+.principal {
+    grid-area: f-menu / f-primaria / i-rodape / i-secundaria;
+    background-color: blue;
+}
+
+.primaria {
+    grid-area: i-3col / inicio / f-col3 / f-primaria;
+    background-color: red;
+    color: white;
+}
+
+.secundaria {
+    grid-area: i-3col / i-secundaria / f-3col / fim;
+    background-color: blueviolet;
+    color: white;
+}
+
+.footer {
+    grid-area: i-rodape / inicio / fim / fim;
+    background-color: black;
+    color: white;
+}
+
+/*Marckup HTML 876 26%*/
