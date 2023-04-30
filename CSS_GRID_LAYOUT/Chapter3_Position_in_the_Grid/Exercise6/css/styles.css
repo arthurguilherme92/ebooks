@@ -1,0 +1,63 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-align: center;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.container {
+    display: grid;
+    grid-template-areas:
+        "topo topo topo"
+        "menu menu menu"
+        "primaria principal secundaria"
+        "rodape rodape rodape";
+    grid-gap:.5rem 1rem;
+}
+
+.topo {
+    grid-area: topo; 
+    background-color: blue; 
+    color: white;
+    height: 5vh;
+}
+
+.menu {
+    grid-area: menu; 
+    background-color: aqua; 
+    color: white;
+    height: 10vh;
+}
+
+.principal {
+    grid-area: principal; 
+    background-color: violet; 
+    color: white;
+    height: 100vh;
+}
+
+.primaria {
+    grid-area: primaria; 
+    background-color: purple; 
+    color: white;
+}
+
+.secundaria {
+    grid-area: secundaria; 
+    background-color: red; 
+    color: white;
+}
+
+.rodape {
+    grid-area: rodape; 
+    background-color: black; 
+    color: white;
+    height: 20vh;
+}
+
+

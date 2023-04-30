@@ -1,0 +1,43 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-align: center;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.container {
+    display: grid;
+    grid-template-areas:
+        "name1 name2 name3"
+        "name4 ... name3";
+    grid-gap:.5rem 1rem;
+}
+
+.box1 {
+    grid-area: name1; 
+    background-color: blue; 
+    color: white;
+}
+
+.box2 {
+    grid-area: name2; 
+    background-color: aqua; 
+    color: white;
+}
+
+.box3 {
+    grid-area: name3; 
+    background-color: violet; 
+    color: white;
+}
+
+.box4 {
+    grid-area: name4; 
+    background-color: purple; 
+    color: white;
+}

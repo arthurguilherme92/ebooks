@@ -22,7 +22,16 @@ body {
     grid-template-rows: [inicio] 6rem [f-topo i-menu] 4rem [f-menu i-3col] 20rem [f-3col i-rodape] 6rem [fim];
     grid-gap: .5rem 1rem;
 }
-
+.primaria {
+    grid-area: i-3col / inicio / f-3col / f-primaria;
+    background-color: red;
+    color: white;
+}
+.principal {
+    background-color: blue;
+    grid-area: f-menu / f-primaria / i-rodape / i-secundaria;
+    
+}
 .top {
     grid-area: inicio / inicio / f-topo / fim;
     background-color: gray;
@@ -36,16 +45,9 @@ body {
 };
 
 
-.principal {
-    grid-area: f-menu / f-primaria / i-rodape / i-secundaria;
-    background-color: blue;
-}
 
-.primaria {
-    grid-area: i-3col / inicio / f-col3 / f-primaria;
-    background-color: red;
-    color: white;
-}
+
+
 
 .secundaria {
     grid-area: i-3col / i-secundaria / f-3col / fim;

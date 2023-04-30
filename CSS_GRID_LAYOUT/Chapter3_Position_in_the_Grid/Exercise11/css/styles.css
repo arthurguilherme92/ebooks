@@ -1,0 +1,46 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-align: center;
+}
+
+html {
+    font-size: 62.5%;
+}
+/*palavra-chave 'dense' p.1359*/
+.container {
+    display: grid;
+    grid-template-columns: 10rem 10rem 10rem 10rem;
+    grid-template-rows: 6rem 6rem 6rem;
+    grid-gap: 1rem;
+}
+
+.box {
+    border: .1rem dashed red;
+}
+
+.box1 {
+    
+    background-color: blue; 
+    color: white;
+}
+
+.box2 {
+    grid-column: auto / span 2;
+    background-color: aqua; 
+    color: white;
+}
+
+.box3 {
+    grid-area: auto / 1 / auto / 3;
+    background-color: violet; 
+    color: white;
+}
+
+.box4 {
+   
+    background-color: purple; 
+    color: white;
+}
