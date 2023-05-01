@@ -9,12 +9,22 @@
 html {
     font-size: 62.5%;
 }
-/*palavra-chave 'dense' p.1359*/
+
 .container {
     display: grid;
     grid-template-columns: 10rem 10rem 10rem 10rem;
     grid-template-rows: 6rem 6rem 6rem;
     grid-gap: 1rem;
+    grid-auto-flow: row;
+    margin-bottom: 5rem;
+}
+
+.container2 {
+    display: grid;
+    grid-template-columns: 10rem 10rem 10rem 10rem;
+    grid-template-rows: 6rem 6rem 6rem;
+    grid-gap: 1rem;
+    grid-auto-flow: row dense;
 }
 
 .box {
@@ -40,7 +50,7 @@ html {
 }
 
 .box4 {
-   
+    grid-area: 2 / 3 / 4 / 4;
     background-color: purple; 
     color: white;
 }

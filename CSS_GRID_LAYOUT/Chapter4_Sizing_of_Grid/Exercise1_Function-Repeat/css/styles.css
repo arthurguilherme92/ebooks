@@ -1,0 +1,22 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-align: center;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, 7%);
+    grid-template-rows: repeat(10, 4vh);
+    grid-gap: calc((100vh - 4vh * 10) / 9) calc((100% - 7% * 12) / 11);
+    
+    margin-bottom: 5rem;
+}
+
+/*1490 Line 5*/
