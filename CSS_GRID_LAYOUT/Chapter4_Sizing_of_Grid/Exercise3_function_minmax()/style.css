@@ -1,0 +1,58 @@
+@import "reset.css";
+
+.container {
+    display: grid;
+    grid-template-columns: 20rem minmax(20rem, 1rf) 20rem;
+    grid-template-rows: 5rem minmax(20rem, auto), 5rem;
+    grid-gap: 1rem 2rem;
+    grid-template-areas: 
+        "header menu menu"
+        "left main right"
+        "footer footer footer"
+    ;
+}
+
+header {
+    background-color: black;
+    color: white;
+    grid-area: header;
+    text-align: center;
+}
+
+nav {
+    background-color: violet;
+    color: white;
+    grid-area: menu;
+    text-align: center;
+}
+
+main {
+    background-color: blue;
+    color: white;
+    grid-area: main;
+    text-align: center;
+    height: 100vh;
+}
+
+.left {
+    background-color: red;
+    color: white;
+    grid-area: left;
+    text-align: center;
+    height: 50vh;
+}
+
+.right {
+    background-color: purple;
+    color: white;
+    grid-area: right;
+    text-align: center;
+    height: 50vh;
+}
+
+footer {
+    background-color: aqua;
+    color: white;
+    grid-area: footer;
+    text-align: center;
+}

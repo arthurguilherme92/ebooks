@@ -1,0 +1,46 @@
+@import "reset.css";
+
+.container1 {
+    display: grid;
+    grid-template-columns: repeat(4, 10rem);
+    grid-template-rows: 6rem;
+    grid-gap: .1rem;
+    background-color: aqua;
+    color: white;
+}
+
+.container2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 10rem);
+    grid-template-rows: 6rem;
+    grid-gap: .1rem;
+    background-color: blue;
+    color: white;
+}
+
+.container3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 10rem);
+    grid-template-rows: 6rem;
+    grid-gap: .1rem;
+    background-color: aquamarine;
+    color: white;
+}
+
+.container4 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(6rem, 1fr));
+    grid-template-rows: 6rem;
+    grid-gap: .1rem;
+    background-color: pink;
+    color: white;
+}
+
+.container5 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
+    grid-template-rows: 6rem;
+    grid-gap: .1rem;
+    background-color: violet;
+    color: white;
+}

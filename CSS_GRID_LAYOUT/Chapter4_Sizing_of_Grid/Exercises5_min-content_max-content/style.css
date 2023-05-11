@@ -1,0 +1,38 @@
+@import "reset.css";
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(min-content, 1fr));
+    grid-template-rows: repeat(2, minmax(max-content));
+    grid-gap: 1.5rem;
+}
+
+.box {
+    border: .1rem solid red;
+}
+
+.box1 {
+    width: min-content;
+}
+
+.box2 {
+    width: max-content;
+}
+
+.box3 {
+    width: minmax(min-content, 20rem);
+}
+
+.box4 {
+    width: minmax(max-content);
+}
+
+.box5 {
+    background-color: red;
+    width: max-content;
+}
+
+.box6 {
+    width: min-content;
+}
+

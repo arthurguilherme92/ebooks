@@ -1,0 +1,12 @@
+@import "reset.css";
+
+body {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 2fr repeat(6, 1fr) 2fr;
+    grid-template-rows: repeat(8, 1fr);
+    height: 80vh;
+    grid-gap: 1rem 2rem;
+}
+
+/*1570*/
