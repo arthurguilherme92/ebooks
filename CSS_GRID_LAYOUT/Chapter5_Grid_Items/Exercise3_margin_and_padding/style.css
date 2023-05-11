@@ -1,0 +1,24 @@
+@import "reset.css";
+
+.container1 {
+    display: grid;
+    grid-template-columns: repeat(2,  35rem);
+    grid-template-rows: auto;
+    grid-gap: 1rem;
+}
+
+.box {
+    border: .1rem solid red;
+}
+
+.box1 {
+    margin: 2rem 3rem 1rem 0;
+    padding: 1rem 2rem 0 0;
+}
+
+.box2 {
+    margin: 3rem 1rem 1rem 5rem;
+    padding: 2rem 4rem 0 3rem;
+}
+
+
