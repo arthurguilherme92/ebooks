@@ -1,0 +1,10 @@
+@import "reset.css";
+
+.container {
+    max-width: 100rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-auto-rows: 10rem;
+    grid-gap: 1rem;
+}

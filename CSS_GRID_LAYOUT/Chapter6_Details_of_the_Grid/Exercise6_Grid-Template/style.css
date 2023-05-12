@@ -1,0 +1,39 @@
+@import "reset.css";
+
+.container{
+    display: grid;
+    grid-template:
+        "header header header"
+        "nav main aside"
+        "footer footer footer" / 20rem 1fr 20rem;
+    grid-gap: .2rem;
+    margin-bottom: 10rem;
+}
+
+.container2{
+    display: grid;
+    grid-template:
+        "header header header"
+        "nav main aside"
+        "footer footer footer";
+    grid-template-columns: 20rem 1fr 20rem;
+    grid-template-rows: auto auto auto;
+    grid-gap: .2rem;
+    margin-bottom: 10rem;
+}
+
+.container3 {
+    display: grid;
+    grid:
+        "header header header" 9rem
+        "nav main aside" 40vh
+        "footer footer footer" 12rem / 20rem 1fr 20rem;
+    grid-gap: .2rem;
+    background-color: gray;
+}
+
+header {grid-area: header;}
+main {grid-area: main;}
+nav {grid-area: nav;}
+aside {grid-area: aside;}
+footer {grid-area: footer;}

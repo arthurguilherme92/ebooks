@@ -1,0 +1,17 @@
+@import "reset.css";
+
+.container {
+    width: 98%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: [col] 1fr 5% [col] 4fr 10% [col] 1fr;
+    grid-template-rows:[linha] 10rem 4vh [linha] 10rem [linha];
+    grid-gap: 1rem;
+}
+
+.box1 { grid-column: col 1; }
+.box2 { grid-column: col 2; }
+.box3 { grid-column: col 3; }
+.box4 { grid-row: linha 2; grid-column: col 1; }
+.box5 { grid-row: linha 2; grid-column: col 2; }
+.box6 { grid-row: linha 2; grid-column: col 3; }

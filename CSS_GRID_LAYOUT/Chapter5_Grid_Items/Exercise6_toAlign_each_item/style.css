@@ -1,0 +1,24 @@
+@import "reset.css";
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(1, 100rem);
+    grid-template-rows: repeat(3, 10rem);
+   
+    background-color: blue;
+    border: 2rem solid pink;
+}
+
+.container1 .box {
+    border: .2rem solid red;
+    background-color: black;
+    color: white;
+    width: 10rem;
+    height: 10rem;
+    position: relative;
+}
+
+.container1 .box .box1 {justify-self: end; align-self: end;};
+
+/*Review after!*/
+
