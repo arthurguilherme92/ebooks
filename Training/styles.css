@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     text-decoration: none;
+    list-style: none;
 }
 
 html {
@@ -10,59 +11,60 @@ html {
 }
 
 body {
-    display: grid;
-    grid-template-columns: 1fr 100rem 1fr;
-    grid-template-areas: "... container ..." ;
+    background-color: gray;
 }
+
 .container {
-    display: grid;
-    grid-template-columns: 15rem 70rem 15rem;
-    grid-template-rows: 6rem 4rem 20rem 6rem;
-    grid-area: container;
-
-    grid-template-areas:
-        "header header header"
-        "nav nav nav"
-        "primary main secundary"
-        "footer footer footer"
-    ;
-    grid-gap: .5rem 1rem;
-}
-
-
-
-.box {
-    border: .2rem solid blue;
+    width: 100%;
+    max-width: 96rem;
+    margin: 0 auto;
+    background-color: white;
+    position: relative;
 }
 
 header {
-    grid-area: header;
-    background-color: black;
-    color: white;
+    width: 100%;
+    padding: 1rem 2rem;
+    line-height: 1;
 }
 
-nav {
-    grid-area: nav;
-    background-color: violet;
+header h1 {
+    margin: .4rem 0 .2rem 0;
+    font-size: 3.6rem;
+    text-align: right;
 }
 
-main {
-    grid-area: main;
-    background-color: blue;
+header h2 {
+    margin: .4rem 0 .2rem 0;
+    font-size: 2rem;
+    text-align: right;
 }
 
-.Primary {
-    grid-area: primary;
-    background-color: red;
+nav > ul {
+    width: 100%;
 }
 
-.Secundary {
-    grid-area: secundary;
-    background-color: pink;
+nav > ul > li {
+    display: inline;
 }
 
-footer {
-    grid-area: footer;
+nav > ul > li > a {
+    float: left;
     background-color: brown;
+    text-align: center;
+    border-right: 1rem solid #fff;
+    padding: 1rem 2rem;
+    font-size: 1.4rem;
+    font-weight: bold;
     color: white;
+}
+
+nav ul li:last-child a {
+    border: none;
+}
+
+nav ul li a:hover {
+    transition: .5s;
+    color: brown;
+    background-color: white;
 }

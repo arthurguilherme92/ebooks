@@ -1,0 +1,38 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1200px 1fr;
+    grid-template-areas: "... ex ...";
+    width: 100%;
+    margin: 0 auto;
+}
+
+.ex {
+    grid-area: ex;
+    margin: 0 auto;
+}
+
+.ex div {
+    border: 2px solid red;
+    height: 40px;
+    width: 170px;
+}
+
+.two {
+    position: relative;
+    left: 60px;
+    top: 15px;
+    margin: 20px 0;
+}
+
+span {
+    position: relative;
+    left: 60px;
+    top: 40px;
+    border: 2px dashed red;
+}
