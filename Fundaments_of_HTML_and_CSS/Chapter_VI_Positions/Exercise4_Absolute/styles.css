@@ -1,0 +1,23 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    border: 2px dashed red;
+    padding: 10px 20px;
+}
+
+.three {
+    background-color: #ddd;
+    position: absolute;
+    left: 90px;
+    top: 125px;
+}
+
+div {
+    width: 360px;
+    padding: 10px 20px;
+    border: 2px solid blue;
+    position: relative;
+}
