@@ -1,0 +1,64 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+div {
+    width: 50%;
+    
+    margin: 3% 1%;
+    padding: 1% 2%;
+}
+
+.border-radius {
+    width: 200px;
+    height: 200px;
+    background-color: gray;
+    margin: 0 auto;
+    border-radius: 50px 80px 40px / 30px 60px;
+    box-shadow: inset blue 0px 0px 70px 0px;   
+}
+
+.border-radius-test {
+    width: 200px;
+    height: 120px;
+    background-color: #eee;
+    border: solid black;
+    float: left;
+}
+
+.one, .two {
+    border-width: 20px 30px 40px 1px;
+}
+
+.one {
+    border-radius: 40px;
+}
+
+.two {
+    border-radius: 40px 60px 60px 20px;
+}
+
+.three {
+    border-width: 40px;
+    border-radius: 40px;
+}
+
+.clear {
+    clear: both;
+}
+
+.four {
+    border-top-left-radius: 90px;
+    border-top-right-radius: 60px;
+}
+
+.five {
+    border-top-left-radius: 120px;
+    border-top-right-radius: 80px;
+}
+
+.six {
+    border-top-left-radius: 180px;
+    border-top-right-radius: 60px;
+}
