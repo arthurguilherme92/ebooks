@@ -22,15 +22,15 @@ h1, h2 {
 }
 
 h1 {
-    font-size: 4rem;
+    font-size: 2.2rem;
 }
 
 h2 {
-    font-size: 3.3rem;
+    font-size: 1.8rem;
 }
 
 h3 {
-    font-size: 2.65rem;
+    font-size: 1.4rem;
 }
 
 p {
@@ -42,14 +42,8 @@ p:last-child {
     margin-bottom: 0; padding: .8rem
 }
 
-a {
-    font-size: 1.6rem;
-}
-
 .container {
     width: 100%;
-    max-width: 120rem;
-    min-width: 76rem;
     margin: 0 auto;
     border: .1rem solid gray;
 }
@@ -60,10 +54,45 @@ a {
     background-color: #3e4095;
     overflow: hidden;
     white-space: nowrap;
+    line-height: 4rem;
 }
 
 .navigation {
     background-color: #00a859;
+    font-weight: bold;
+    overflow: hidden;
+    height: 4.48rem;
+    width: 100%;
+}
+
+.navigation:hover, .navigation:focus, .navigation:active {
+    height: 26rem;
+    transition: 2s;
+    opacity: .8;
+}
+
+.menu-icon {
+    padding-top: 1rem;
+    color: #fff;
+    font-size: 2rem;
+}
+
+.navigation ul li a {
+    font-size: 2rem;
+    display: block;
+    text-decoration: none;
+    padding: .6rem 1.6rem .6rem 1.6rem;
+    border-bottom: .1rem solid #333;
+    color: white;
+}
+
+.navigation ul li a, .navigation ul li a:active, .navigation ul li a:visited {
+    color: white;
+}
+
+
+.navigation ul li a:hover, .navigation ul li a:focus, .navigation ul li a:active {
+    color: #3e4095;
 }
 
 .main-page {
@@ -73,11 +102,12 @@ a {
 .main-page , header, .aux {
     text-align: center;
     color: #3e4095;
+    position: relative;
 }
 
-.block, .aux, article {
-    border-bottom: .1rem, solid #3e4095;
+.block, .aux article {
     padding: 1.2rem 0;
+    border-bottom: 1px solid #3e4095;
 }
 
 .aux {
@@ -88,4 +118,99 @@ a {
     background-color: #3e4095;
     color: #fff;
     text-align: center;
+}
+
+@media all and (min-width: 480px) {
+    body {
+        background-image: url(imgs/world-cup.jpg.jpg);
+        background-repeat: no-repeat;
+        background-position: left-top;
+    }
+
+    .top {
+        background-color: transparent;
+    }
+
+    .top h1 {
+        color: #00a859;
+        font-size: 8vw;
+        margin: 2vw 0;
+        text-shadow: .3rem .3rem .2rem #666;
+    }
+
+    .main-page {
+        background-color: #dfcc29;
+    }
+
+    .navigation {
+        width: 30%;
+        float: left;
+        height: 32rem;
+    }
+
+    .main-page {
+        width: 70%;
+        float: right;
+    }
+
+    .footer {
+        clear: both;
+        width: 100%;
+    }
+}
+
+@media all and (min-width: 1000px) {
+    body {
+        background-image: url(imgs/world-cup.jpg.jpg);
+        background-size: cover;
+    }
+
+    .top h1 {
+        font-size: 4.8rem;
+        margin: 1.2rem 0;
+    }
+
+    .main-page {
+        background: none;
+    }
+
+
+    .main header {
+        background-color: #3e4095;
+        color: white;
+        margin-bottom: .6rem;
+    }
+
+    .block {
+        padding: 0 .8rem;
+        background-color: rgba(255, 255, 0, 0.7);
+    }
+
+    .navigation {
+        width: 15%;
+    }
+
+    .main-page {
+        width: 85%;
+    }
+
+    .main {
+        width: 70%;
+        float: left;
+    }
+
+    .aux {
+        width: 30%;
+        float: right;
+    }
+        
+}
+
+@media all and (min-width: 1200px) {
+    .container {
+        max-width: 160rem;
+        margin: 0 auto;
+    }
+
+    
 }
