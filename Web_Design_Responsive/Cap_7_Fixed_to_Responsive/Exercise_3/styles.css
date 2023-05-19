@@ -1,0 +1,17 @@
+* {
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.container {
+    width: 100%;
+    max-width: 94rem;
+    margin: 0 auto;
+    background-color: #bababa;
+    padding: 3.0612px;
+}

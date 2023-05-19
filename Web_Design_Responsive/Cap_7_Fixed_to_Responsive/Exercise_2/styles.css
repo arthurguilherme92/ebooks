@@ -1,0 +1,54 @@
+* {
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.container {
+    max-width: 980px;
+    margin: 0 auto;
+    background-color: #bababa;
+    padding: 3.0612px;
+}
+
+.one {
+    width: 40.8163%;
+    margin-left: 5.10204%;
+    background-color: #d6d6d6;
+    margin: 0 auto;
+    padding: 1.0204% 2.0408%;
+}
+
+.with-px {
+    font-size: 4rem;
+}
+
+.with-vw {
+    font-size: 4.081vw;
+}
+
+.container2 {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: gray;
+}
+
+.container-blue {
+    width: 300px;
+    height: 300px;
+    background-color: blue;
+    position: relative;
+    display: inline-block;
+}
+
+.container-red {
+    width: 25%;
+    height: 30rem;
+    background-color: red;
+    position: relative;
+    display: inline-block; 
+}

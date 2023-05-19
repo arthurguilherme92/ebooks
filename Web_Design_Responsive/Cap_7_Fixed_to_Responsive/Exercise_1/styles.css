@@ -1,0 +1,17 @@
+* {
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 980px;
+    margin: 0 auto;
+    background-color: #bababa;
+}
+
+.one {
+    width: 40.8163%;
+    background-color: #d6d6d6;
+    margin: 0 auto;
+}
